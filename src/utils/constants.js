@@ -1,7 +1,7 @@
 export const MOCK_USER_ID = "cyberpunk420";
 export const INITIAL_USER_CREDITS = 1000;
 
-const GEMINI_API_KEY = "AIzaSyADLjlJj3v2EkNxuIpPriP0v3HE_Ugopyo";
+const GEMINI_API_KEY = import.meta.env.VITE_GEMINI_API_KEY;
 export const GEMINI_API_URL_FLASH = `https://generativelanguage.googleapis.com/v1beta/models/gemini-2.0-flash:generateContent?key=${GEMINI_API_KEY}`;
 
 export const FALLBACK_CAPTIONS = [
